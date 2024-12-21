@@ -24,7 +24,7 @@ const passport =require("passport");
 const LocalStrategy = require("passport-local");
 const User = require('./models/user.js');
 const {isLoggedIn ,isOwner, validateListing} = require("./middleware.js");
-const dburl =process.env.ATLASDB_URL;
+const dburl = process.env.ATLASDB_URL;
 
 app.listen(8080,()=>{
   console.log('Server started');
